@@ -13,9 +13,9 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class RadioDeckServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'radio-deck';
+    public static string $name = 'radio-flags';
 
-    public static string $viewNamespace = 'radio-deck';
+    public static string $viewNamespace = 'radio-flags';
 
     public function configurePackage(Package $package): void
     {
@@ -27,7 +27,7 @@ class RadioDeckServiceProvider extends PackageServiceProvider
         $package->name(static::$name)
             ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
-                $command->askToStarRepoOnGitHub('jaocero/radio-deck');
+                $command->askToStarRepoOnGitHub('juniyadi/filament-radio-flags');
             });
 
         if (file_exists($package->basePath('/../resources/views'))) {

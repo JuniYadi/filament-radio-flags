@@ -1,6 +1,6 @@
 <?php
 
-namespace JaOcero\RadioDeck\Forms\Components;
+namespace JuniYadi\RadioFlags\Forms\Components;
 
 use Closure;
 use Filament\Support\Concerns\HasAlignment;
@@ -8,16 +8,16 @@ use Filament\Support\Concerns\HasColor;
 use Filament\Support\Concerns\HasIcon;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Htmlable;
-use JaOcero\RadioDeck\Contracts\HasDescriptions;
-use JaOcero\RadioDeck\Contracts\HasIcons;
-use JaOcero\RadioDeck\Intermediary\IntermediaryRadio;
-use JaOcero\RadioDeck\Traits\HasDirection;
-use JaOcero\RadioDeck\Traits\HasExtraCardsAttributes;
-use JaOcero\RadioDeck\Traits\HasExtraDescriptionsAttributes;
-use JaOcero\RadioDeck\Traits\HasExtraOptionsAttributes;
-use JaOcero\RadioDeck\Traits\HasGap;
-use JaOcero\RadioDeck\Traits\HasIconSizes;
-use JaOcero\RadioDeck\Traits\HasPadding;
+use JuniYadi\RadioFlags\Contracts\HasDescriptions;
+use JuniYadi\RadioFlags\Contracts\HasIcons;
+use JuniYadi\RadioFlags\Intermediary\IntermediaryRadio;
+use JuniYadi\RadioFlags\Traits\HasDirection;
+use JuniYadi\RadioFlags\Traits\HasExtraCardsAttributes;
+use JuniYadi\RadioFlags\Traits\HasExtraDescriptionsAttributes;
+use JuniYadi\RadioFlags\Traits\HasExtraOptionsAttributes;
+use JuniYadi\RadioFlags\Traits\HasGap;
+use JuniYadi\RadioFlags\Traits\HasIconSizes;
+use JuniYadi\RadioFlags\Traits\HasPadding;
 
 class RadioDeck extends IntermediaryRadio
 {

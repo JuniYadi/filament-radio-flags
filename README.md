@@ -36,7 +36,7 @@ content: [
 ## Usage
 
 ```php
-use JaOcero\RadioDeck\Forms\Components\RadioDeck;
+use JuniYadi\RadioFlags\Forms\Components\RadioDeck;
 use Filament\Support\Enums\IconSize;
 use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\IconPosition;
@@ -105,8 +105,8 @@ You can also utilize an Enum class for `->options()`, `->descriptions()`, and `-
 namespace App\Filament\Enums;
 
 use Filament\Support\Contracts\HasLabel;
-use JaOcero\RadioDeck\Contracts\HasDescriptions;
-use JaOcero\RadioDeck\Contracts\HasIcons;
+use JuniYadi\RadioFlags\Contracts\HasDescriptions;
+use JuniYadi\RadioFlags\Contracts\HasIcons;
 
 enum AssetType: string implements HasLabel, HasDescriptions, HasIcons
 {

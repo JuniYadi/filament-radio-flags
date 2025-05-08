@@ -1,6 +1,6 @@
 <?php
 
-namespace JaOcero\RadioDeck\Intermediary;
+namespace JuniYadi\RadioFlags\Intermediary;
 
 use Closure;
 use Filament\Forms\Components\Concerns\CanDisableOptions as ConcernCanDisableOptions;

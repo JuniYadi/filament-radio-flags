@@ -1,11 +1,11 @@
 <?php
 
-namespace JaOcero\RadioDeck;
+namespace JuniYadi\RadioFlags;
 
 use Filament\Support\Assets\Asset;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
-use JaOcero\RadioDeck\Testing\TestsRadioDeck;
+use JuniYadi\RadioFlags\Testing\TestsRadioDeck;
 use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;

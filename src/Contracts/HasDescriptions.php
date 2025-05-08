@@ -1,6 +1,6 @@
 <?php
 
-namespace JaOcero\RadioDeck\Contracts;
+namespace JuniYadi\RadioFlags\Contracts;
 
 interface HasDescriptions
 {

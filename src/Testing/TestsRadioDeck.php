@@ -1,6 +1,6 @@
 <?php
 
-namespace JaOcero\RadioDeck\Testing;
+namespace JuniYadi\RadioFlags\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace JaOcero\RadioDeck\Tests;
+namespace JuniYadi\RadioFlags\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -15,7 +15,7 @@ use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use JaOcero\RadioDeck\RadioDeckServiceProvider;
+use JuniYadi\RadioFlags\RadioDeckServiceProvider;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;

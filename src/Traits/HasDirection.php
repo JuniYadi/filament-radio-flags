@@ -1,6 +1,6 @@
 <?php
 
-namespace JaOcero\RadioDeck\Traits;
+namespace JuniYadi\RadioFlags\Traits;
 
 use Closure;
 

@@ -75,24 +75,17 @@
                     \Filament\Support\get_color_css_variables($color, shades: [600, 500]) => $color !== 'gray',
                 ])>
                     @if ($iconExists)
-                        <x-filament::icon :icon="$icon" @class([
-                            'flex-shrink-0',
-                            match ($iconSize) {
-                                IconSize::Small => $iconSizeSm ?: 'h-8 w-8',
-                                'sm' => $iconSizeSm ?: 'h-8 w-8',
-                                IconSize::Medium => $iconSizeMd ?: 'h-9 w-9',
-                                'md' => $iconSizeMd ?: 'h-9 w-9',
-                                IconSize::Large => $iconSizeLg ?: 'h-10 w-10',
-                                'lg' => $iconSizeLg ?: 'h-10 w-10',
-                                default => 'h-8 w-8',
-                            },
-                            match ($color) {
-                                'gray' => 'fi-color-gray text-gray-600 dark:text-gray-500',
-                                default => 'fi-color-custom text-custom-600 dark:text-custom-500',
-                            },
-                        ]) @style([
-                            \Filament\Support\get_color_css_variables($color, shades: [600, 500]) => $color !== 'gray',
-                        ]) />
+                        <x-icon name="flag-country-{{ $icon }}"
+                            @if($iconSize === IconSize::Small)
+                                width="16" height="16"
+                            @elseif($iconSize === IconSize::Medium)
+                                width="32" height="32"
+                            @elseif($iconSize === IconSize::Large)
+                                width="48" height="48"
+                            @else
+                                width="24" height="24"
+                            @endif
+                        />
                     @endif
                     <div {{ $getExtraOptionsAttributeBag()->merge(['class' =>'place-items-start']) }}>
                         <span class="font-medium text-gray-950 dark:text-white">

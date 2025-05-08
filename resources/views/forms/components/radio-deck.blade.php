@@ -75,15 +75,15 @@
                     \Filament\Support\get_color_css_variables($color, shades: [600, 500]) => $color !== 'gray',
                 ])>
                     @if ($iconExists)
-                        <x-icon name="flag-country-{{ $icon }}"
+                        <x-flag-{{ strtolower($icon) }}
                             @if($iconSize === IconSize::Small)
-                                width="16" height="16"
+                                class="w-4 h-4"
                             @elseif($iconSize === IconSize::Medium)
-                                width="32" height="32"
+                                class="w-8 h-8"
                             @elseif($iconSize === IconSize::Large)
-                                width="48" height="48"
+                                class="w-12 h-12"
                             @else
-                                width="24" height="24"
+                                class="w-6 h-6"
                             @endif
                         />
                     @endif
